@@ -1,0 +1,11 @@
+[user]
+	name = plowman98
+	email = 98.plowman@gmail.com
+[init]
+	defaultBranch = main
+[core]
+	editor = code --wait
+[push]
+	autoSetupRemote = true
+[url "git@github.com:"]
+	insteadOf = https://github.com/
