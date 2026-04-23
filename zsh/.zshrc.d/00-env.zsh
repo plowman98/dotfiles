@@ -1,13 +1,13 @@
 # 00-env.zsh
 
+# local bin
+export PATH="$HOME/.local/bin:$PATH"
+
 # cargo
 [ -f "$HOME/.cargo/env" ] && source "$HOME/.cargo/env"
 
 # uv
 [ -f "$HOME/.local/bin/env" ] && source "$HOME/.local/bin/env"
-
-# local bin
-export PATH="$HOME/.local/bin:$PATH"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
