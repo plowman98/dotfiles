@@ -14,8 +14,8 @@ fi
 
 # ls
 if command -v eza > /dev/null; then
-    alias ls='eza --group-directories-first -F'
-    alias tree='eza --group-directories-first -F -TL 3'
+    alias ls='eza --group-directories-first --classify=auto'
+    alias tree='eza --group-directories-first --classify=auto -TL 3'
 elif command -v ls > /dev/null; then
     alias ls='ls --group-directories-first -F'
 fi
