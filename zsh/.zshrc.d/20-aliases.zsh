@@ -15,7 +15,7 @@ fi
 # ls
 if command -v eza > /dev/null; then
     alias ls='eza --group-directories-first --classify=auto'
-    alias tree='eza --group-directories-first --classify=auto -TL 3'
+    alias tree='eza --group-directories-first --classify=auto -TL 3 --git-ignore -a --ignore-glob=".git"'
 elif command -v ls > /dev/null; then
     alias ls='ls --group-directories-first -F'
 fi
