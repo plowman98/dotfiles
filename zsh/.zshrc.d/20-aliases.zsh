@@ -21,3 +21,7 @@ elif command -v ls > /dev/null; then
 fi
 alias ll='ls -hal --git'
 alias la='ls -a'
+
+# gh
+alias ghil='gh issue list --json number,title,url --jq '\''.[] | "#\(.number) \(.title) \(.url)"'\'''
+alias ghpl='gh pr list --json number,title,url --jq '\''.[] | "#\(.number) \(.title) \(.url)"'\'''
