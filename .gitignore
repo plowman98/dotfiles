@@ -1,3 +1,6 @@
 /tmp/
 
 .vscode/settings.json
+
+zsh/.zshrc.local.d/*
+!zsh/.zshrc.local.d/.gitkeep
