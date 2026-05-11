@@ -5,3 +5,4 @@ if [ -d "$HOME/.zshrc.d" ]; then
         printf "done\n"
     done
 fi
+
