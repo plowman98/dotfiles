@@ -15,6 +15,3 @@ if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
   eval "$(fnm env --shell zsh)"
 fi
-
-# deno
-[ -f "$HOME/.deno/env" ] && source "$HOME/.deno/env"
