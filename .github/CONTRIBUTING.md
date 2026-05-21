@@ -40,6 +40,8 @@ This includes, but is not limited to:
 - Issue titles and bodies
 - Code comments and documentation
 
+Ad-hoc chat (for example, conversations with AI agents) may be in any language, including Japanese. Only the artifacts above need to be in English.
+
 ## Workflow Manuals
 
 For actual procedures, refer to the flows under `.github/manuals/`.
