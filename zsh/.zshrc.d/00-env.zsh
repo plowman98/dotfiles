@@ -9,10 +9,12 @@ export PATH="$HOME/.local/bin:$PATH"
 # uv
 [ -f "$HOME/.local/bin/env" ] && source "$HOME/.local/bin/env"
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && source "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && source "$NVM_DIR/bash_completion"
+# fnm
+FNM_PATH="$HOME/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="$FNM_PATH:$PATH"
+  eval "$(fnm env --shell zsh)"
+fi
 
 # deno
 [ -f "$HOME/.deno/env" ] && source "$HOME/.deno/env"
