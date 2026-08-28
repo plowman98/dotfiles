@@ -15,3 +15,8 @@ if [ -d "$FNM_PATH" ]; then
   export PATH="$FNM_PATH:$PATH"
   eval "$(fnm env --shell zsh)"
 fi
+
+# sdkman
+# NOTE: Keep this last; sdkman-init.sh must run after every other PATH change.
+export SDKMAN_DIR="$HOME/.sdkman"
+[ -s "$SDKMAN_DIR/bin/sdkman-init.sh" ] && source "$SDKMAN_DIR/bin/sdkman-init.sh"
