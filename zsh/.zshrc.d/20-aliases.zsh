@@ -15,11 +15,12 @@ fi
 # ls
 if command -v eza > /dev/null; then
     alias ls='eza --group-directories-first --classify=auto'
+    alias ll='ls -hal --git'
     alias tree='eza --group-directories-first --classify=auto -TL 3 --git-ignore -a --ignore-glob=".git"'
 elif command -v ls > /dev/null; then
     alias ls='ls --group-directories-first -F'
+    alias ll='ls -hal'
 fi
-alias ll='ls -hal --git'
 alias la='ls -a'
 
 # gh
